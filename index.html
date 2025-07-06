@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Naveen C | Civil Engineer Portfolio</title>
     <style>
         :root {
-            --primary-color: #0057a3;
-            --background-color: #f4f4f4;
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --background-color: #ecf0f1;
             --card-bg: #ffffff;
-            --highlight: #edf2fa;
+            --highlight: #dff9fb;
             --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
@@ -18,11 +19,11 @@
             margin: 0;
             padding: 0;
             background-color: var(--background-color);
-            color: #333;
+            color: #2d3436;
         }
 
         .container {
-            width: 90%;
+            width: 95%;
             max-width: 1200px;
             margin: auto;
             overflow: hidden;
@@ -37,21 +38,21 @@
         }
 
         header img {
-            width: 140px;
-            height: 140px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
-            border: 5px solid #fff;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            border: 4px solid #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
             display: block;
             margin: 0 auto 15px;
         }
 
         section {
-            padding: 30px;
+            padding: 20px;
             background: var(--card-bg);
-            margin: 20px 0;
+            margin: 15px 0;
             border-radius: 10px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
             transition: 0.3s;
         }
 
@@ -60,8 +61,8 @@
         }
 
         h2 {
-            color: var(--primary-color);
-            border-left: 5px solid var(--primary-color);
+            color: var(--secondary-color);
+            border-left: 5px solid var(--secondary-color);
             padding-left: 10px;
         }
 
@@ -69,38 +70,11 @@
             margin-bottom: 10px;
         }
 
-        .volunteering-card, .internship-card, .education-card {
-            transition: 0.3s;
-        }
-
-        .volunteering-card:hover, .internship-card:hover, .education-card:hover {
-            transform: scale(1.03);
-            background-color: #e0eefe;
-        }
-
-        .contact-icons a {
-            color: var(--primary-color);
-        }
-
-        .project-slider a {
-            background: #fff;
-            border: 1px solid var(--primary-color);
-            color: var(--primary-color);
-        }
-
-        .project-slider a:hover {
-            background: var(--primary-color);
-            color: white;
-        }
-
         .highlight {
-            background: #fef9e7;
-            font-weight: bold;
-        }
-
-        .declaration p {
-            margin: 10px 0;
-            line-height: 1.6;
+            background: var(--secondary-color);
+            color: #fff;
+            padding: 2px 6px;
+            border-radius: 3px;
         }
 
         .declaration {
@@ -109,37 +83,145 @@
             padding: 20px;
         }
 
+        .contact-icons a {
+            color: var(--secondary-color);
+            margin: 0 10px;
+            font-size: 24px;
+        }
+
+        .contact-section {
+            text-align: center;
+        }
+
         button {
-            background: var(--primary-color);
+            background: var(--secondary-color);
             color: #fff;
             border: none;
-            padding: 12px 24px;
-            border-radius: 8px;
+            padding: 10px 20px;
+            border-radius: 5px;
             font-size: 16px;
             cursor: pointer;
+            margin-top: 10px;
         }
 
         button:hover {
-            background-color: #004080;
+            background-color: #2980b9;
+        }
+
+        .project-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .project-gallery img {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            .project-gallery {
+                flex-direction: column;
+                align-items: center;
+            }
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- Your full body content here -->
+    <header>
+        <img src="profile.jpg" alt="Profile Picture">
+        <h1>Naveen C</h1>
+        <p>Civil Site Engineer | Structural Designer | BIM Specialist</p>
+        <button onclick="window.open('resume.pdf')">View/Download Resume</button>
+    </header>
 
-    <section id="declaration" class="declaration container">
-        <h2>Declaration</h2>
-        <p>I hereby declare that all the information and details provided in this portfolio are true and correct to the best of my knowledge and belief. I am responsible for the authenticity of the details shared herein and affirm that the work, experiences, and projects listed are accurate and verifiable.</p>
-        <p><strong>Place:</strong> Chennai</p>
-        <p><strong>Date:</strong> <span id="ist-date">Loading...</span></p>
-        <p><strong>Signature:</strong> Naveen C</p>
-    </section>
+    <div class="container">
+        <section>
+            <h2>About Me</h2>
+            <p>I am a detail-oriented <span class="highlight">Civil Engineer</span> with strong expertise in <span class="highlight">structural design</span>, <span class="highlight">site execution</span>, and <span class="highlight">BIM modeling</span>. Currently working at <strong>Tata Consultancy Services</strong> as a <strong>Middleware System Engineer</strong>, I have 3 years of experience in IT and engineering automation. I aim to integrate cloud-based DevOps solutions into civil workflows for optimized performance and documentation.</p>
+        </section>
+
+        <section>
+            <h2>Responsibilities as a Civil Engineer</h2>
+            <ul>
+                <li>Managed and supervised site execution with compliance to standards.</li>
+                <li>Reviewed architectural and structural drawings with consultants.</li>
+                <li>Prepared estimates, quantity surveying, and project billing.</li>
+                <li>Ensured safety and quality control at all stages.</li>
+                <li>Skilled in AutoCAD, Revit, STAAD Pro for modeling and analysis.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>AutoCAD, Revit Architecture, STAAD Pro, SketchUp, 3ds Max</li>
+                <li>Construction Supervision & Scheduling</li>
+                <li>BIM & Visualization Techniques</li>
+                <li>Cost Estimation & Project Budgeting</li>
+                <li>Microsoft Project, Excel for Reporting</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Project Gallery</h2>
+            <div class="project-gallery">
+                <img src="project1.jpg" alt="G+3 Residential Design">
+                <img src="project2.jpg" alt="School Building Revit Model">
+                <img src="project3.jpg" alt="Soil Enhancement Using Banana Ash">
+                <img src="project4.jpg" alt="Municipal Water Planning">
+            </div>
+        </section>
+
+        <section>
+            <h2>Internships</h2>
+            <ul>
+                <li><strong>Aadithya Builders</strong> – Construction inspection and daily reporting.</li>
+                <li><strong>UNIQ Technologies</strong> – Monitored reinforcement and concrete processes.</li>
+                <li><strong>Municipal Admin & Water Supply Dept</strong> – Project estimation and documentation.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Volunteering</h2>
+            <ul>
+                <li>Swachh Bharat Mission – Beach clean-up at Akkarai.</li>
+                <li>Pond Restoration – Assisted temple renovation projects.</li>
+            </ul>
+        </section>
+
+        <section class="contact-section">
+            <h2>Contact</h2>
+            <p>Email: cnaveen014@example.com</p>
+            <div class="contact-icons">
+                <a href="https://wa.me/6382055634" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                <a href="tel:+916382055634"><i class="fas fa-phone"></i></a>
+                <a href="https://linkedin.com/in/naveen-c-227075190" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:cnaveen014@example.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </section>
+
+        <section id="declaration" class="declaration">
+            <h2>Declaration</h2>
+            <p>I hereby declare that all the information provided in this portfolio is accurate and verifiable to the best of my knowledge.</p>
+            <p><strong>Place:</strong> Chennai</p>
+            <p><strong>Date:</strong> <span id="ist-date">Loading...</span></p>
+            <p><strong>Signature:</strong> Naveen C</p>
+        </section>
+    </div>
 
     <script>
         function getISTDate() {
             const now = new Date();
-            const istOffset = 5.5 * 60; // IST offset in minutes
+            const istOffset = 5.5 * 60;
             const utc = now.getTime() + (now.getTimezoneOffset() * 60000);
             const istTime = new Date(utc + (istOffset * 60000));
             const day = String(istTime.getDate()).padStart(2, '0');
